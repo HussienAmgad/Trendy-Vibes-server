@@ -5,7 +5,7 @@ const { default: axios } = require('axios');
 
 
 const app = express();
-const port = 8080 || process.env.PORT;
+const port = process.env.PORT || 8080;
 
 // Middleware لتفسير الجسم (body) كـ JSON
 app.use(express.json());
